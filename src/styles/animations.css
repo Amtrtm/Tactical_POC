@@ -1,0 +1,20 @@
+@keyframes glowPulse {
+  0% {
+    text-shadow: 0 0 10px #61c8ff, 0 0 20px #61c8ff, 0 0 30px #61c8ff;
+  }
+  50% {
+    text-shadow: 0 0 15px #61c8ff, 0 0 25px #61c8ff, 0 0 40px #61c8ff;
+  }
+  100% {
+    text-shadow: 0 0 10px #61c8ff, 0 0 20px #61c8ff, 0 0 30px #61c8ff;
+  }
+}
+
+.glow-button {
+  border-radius: 25px !important;
+  padding: 8px 20px !important;
+}
+
+.glow-button:hover {
+  animation: glowPulse 1.5s ease-in-out infinite;
+}
